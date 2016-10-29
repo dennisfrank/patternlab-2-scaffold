@@ -1,0 +1,36 @@
+///* ========================================================================
+//   #COLORS
+//   ======================================================================== */
+
+// --------------------------------------------------------
+// Pure Color Palette
+// --------------------------------------------------------
+
+$color-black: #000 !default;
+$color-white: #fff !default;
+
+$color-blue: #0051a3 !default;
+$color-blue-light: #0080ff !default;
+
+
+
+// --------------------------------------------------------
+// Abstract Colors Palette
+// --------------------------------------------------------
+
+$color-page: $color-white;
+
+$color-brand: $color-blue;
+
+$color-text: $color-black;
+$color-text-invert: $color-white;
+
+$color-link: $color-blue;
+$color-link-hover: $color-blue-light;
+
+
+
+// --------------------------------------------------------
+// Components Palette
+// --------------------------------------------------------
+$color-border: $color-black;

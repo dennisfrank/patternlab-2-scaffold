@@ -1,0 +1,62 @@
+/* ==========================================================================
+   #ICONS
+   ========================================================================== */
+
+// IconSizes in px
+$icon-sizes: (
+  auto: 1em, // required
+  xs: 9px,
+  s: $fs-s,
+  base: $fs-base, // required
+  l: $fs-l,
+  xl: $fs-xl,
+) !default;
+
+$icon-default-size: auto !default;
+
+
+/**
+ * Icon sizes
+ */
+
+// Icon size mixin
+@mixin icon-size($size: base, $important: null) {
+
+  @if $important == "important" {
+    $important: !important;
+  }
+
+  $size: map-get($icon-sizes, $size);
+
+  font-size: $size $important;
+}
+
+
+
+/**
+ * Icon size classes and data attributes
+ */
+
+// Generate icon size classes
+@each $size, $value in $icon-sizes {
+  /* #{$size} */
+  [data-icon-size="#{$size}"] {
+    @include icon-size($size, important);
+  }
+}
+
+
+
+.o-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.o-icon--middle {
+  vertical-align: middle;
+}
+

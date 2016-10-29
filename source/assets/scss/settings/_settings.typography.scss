@@ -1,0 +1,47 @@
+///* ========================================================================
+//   #TYPOGRAPHY
+//   ======================================================================== */
+
+$base-font: "Arial" !default;
+$ff-base: "#{$base-font}", Helvetica, "Helvetica Neue", sans-serif !default;
+
+// Font weights
+$fw-light: 100 !default;
+$fw-normal: 300 !default;
+$fw-regular: $fw-normal !default;
+$fw-medium: 500 !default;
+$fw-bold: 700 !default;
+
+// Font sizes
+$fs-xxxs: 8px !default;
+$fs-xxs: 9px !default;
+$fs-xs: 11px !default;
+$fs-s: 12px !default;
+$fs-base: 13px !default;
+$fs-l: 16px !default;
+$fs-xl: 18px !default;
+$fs-xxl: 20px !default;
+$fs-xxxl: 24px !default;
+
+// Line height
+$lh-base: $fs-base * 1.3077 !default;
+
+// Heading font sizes
+$fs-h1: $fs-xxl !default;
+$fs-h2: $fs-xl !default;
+$fs-h3: $fs-base !default;
+$fs-h4: $fs-base !default;
+$fs-h5: $fs-base !default;
+$fs-h6: $fs-base !default;
+
+
+// Inuit
+$inuit-global-font-size:    $fs-base;
+$inuit-global-line-height:  $lh-base;
+
+$inuit-font-size-h1: $fs-h1;
+$inuit-font-size-h2: $fs-h2;
+$inuit-font-size-h3: $fs-h3;
+$inuit-font-size-h4: $fs-h4;
+$inuit-font-size-h5: $fs-h5;
+$inuit-font-size-h6: $fs-h6;

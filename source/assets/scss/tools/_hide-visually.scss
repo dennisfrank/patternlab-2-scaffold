@@ -1,0 +1,30 @@
+///* ========================================================================
+//   #HIDE VISUALLY MIXIN
+//   ======================================================================== */
+
+// Visually hide content while keeping it accessible for screen readers:
+// http://hugogiraudel.com/2016/10/13/css-hide-and-seek/
+
+@mixin hide-visually($focusable: false) {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+
+  @if $focusable == true {
+    &:active,
+    &:focus {
+      clip: auto !important;
+      clip-path: none !important;
+      height: auto !important;
+      overflow: visible !important;
+      width: auto !important;
+      white-space: normal !important;
+    }
+  }
+}

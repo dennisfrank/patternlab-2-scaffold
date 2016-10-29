@@ -1,0 +1,31 @@
+/* ==========================================================================
+   #HIDE-VISUALLY
+   ========================================================================== */
+
+$inuit-enable-hide-visually: false !default;
+$inuit-enable-responsive-hide-visually: false !default;
+
+
+@if ($inuit-enable-hide-visually == true) {
+
+  /* Hide visually helper class */
+  .u-hide-visually {
+    @include hide-visually;
+  }
+
+}
+
+
+
+@if ($inuit-enable-responsive-hide-visually == true) {
+
+  @include responsive() {
+
+    /* Responsive hide visually helper classes */
+    .u-hide-visually\@#{$breakpoint} {
+      @include hide-visually;
+    }
+
+  }
+
+}

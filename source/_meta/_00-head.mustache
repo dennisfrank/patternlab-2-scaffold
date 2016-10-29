@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+  <html class="no-js{{# htmlClass }}  {{ htmlClass }}{{/ htmlClass }}"{{# lang }} lang="{{ lang }}"{{/ lang }}>
+  <head>
+    <title>{{ title }}</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../assets/css/main.css?{{ cacheBuster }}">
+
+    <!-- injector:js:head -->
+    <!-- endinjector -->
+
+    <!-- injector:js:head:standalone -->
+    <!-- endinjector -->
+
+    <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+    {{{ patternLabHead }}}
+    <link rel="stylesheet" href="../../assets/css/styleguide.css?{{ cacheBuster }}" media="all" />
+    <!-- End Pattern Lab -->
+
+    <script>
+      document.documentElement.className =
+         document.documentElement.className.replace("no-js","js");
+    </script>
+
+  </head>
+  <body{{# bodyClass }} class="{{ bodyClass }}"{{/ bodyClass }}>
+
+  {{# icon-defs }}{{> atoms-icon-defs }}{{/ icon-defs }}

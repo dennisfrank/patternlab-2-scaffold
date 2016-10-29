@@ -1,0 +1,54 @@
+///* ========================================================================
+//   #RESPONSIVE MIXIN
+//   ======================================================================== */
+
+$responsive-exclude-default: null !default;
+
+
+// Mixin to quickly generate different responsive selectors
+// based upon the breakpoints defined in `breakpoints` map.
+@mixin responsive($selector: null, $exclude: $responsive-exclude-default, $include: all) {
+
+  @if ($exclude == null) {
+    $exclude: $responsive-exclude-default
+  }
+
+  // Loop through our previously-defined breakpoints.
+  @each $breakpoint, $mediaquery in $breakpoints {
+
+    // Exclude breakpoints
+    @if (index($exclude, $breakpoint) == null) {
+
+      // Include breakpoints
+      @if ($include == all or $include == null or index($include, $breakpoint)) {
+
+        // If a selector is given base responsive selectors on it
+        @if ($selector !=null) {
+
+          // Build media-query based selector
+          @media #{$mediaquery} {
+            #{$selector}\@#{$breakpoint} {
+              @content;
+            }
+          }
+        }
+
+        // If no selector is given
+        @else {
+
+          // Make breakpoint variable global to allow use in @content
+          $breakpoint: $breakpoint !global;
+
+          // Build media-qury without selector
+          @media #{$mediaquery} {
+            @content;
+          }
+
+          // Take the global breakpoint variable back out of scope
+          $breakpoint: null !global;
+        }
+
+      } // Close include check
+    } // Close exclude check
+  } // Close breakpoints loop
+}
