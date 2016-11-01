@@ -17,7 +17,7 @@ module.exports = {
     icons: {
         files: {
           //'<%= globalConfig.public.icons %>/icons.svg': ['<%= globalConfig.public.icons %>/*.svg'],
-          '<%= globalConfig.source.source %>/_patterns/10-atoms/00-icon-defs/_00-icon-defs.mustache': ['<%= globalConfig.public.icons %>/*.svg'],
+          '<%= globalConfig.source.source %>/_patterns/10-atoms/00-icon-defs/_icon-defs.hbs': ['<%= globalConfig.public.icons %>/*.svg'],
         },
     },
 };

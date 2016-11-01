@@ -33,6 +33,7 @@
     "jit-grunt": "^0.10.0",
     "load-grunt-config": "^0.19.2",
     "minimist": "^1.2.0",
+    "patternengine-node-handlebars": "^1.0.0",
     "patternlab-node": "^2.6.0-alpha",
     "patternlab-starterkit": "git+https://github.com/dennisfrank/patternlab-mustache-starterkit.git",
     "postcss-svg": "^1.0.6",
