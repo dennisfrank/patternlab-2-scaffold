@@ -1,7 +1,7 @@
 {
   "name": "patternlab-2-scaffold",
   "description": "Grunt wrapper around patternlab-node core + custom StarterKit and inuitcss",
-  "homepage": "https://github.com/dennisfrank",
+  "homepage": "https://github.com/dennisfrank/patternlab-2-scaffold",
   "main": "./core/lib/patternlab.js",
   "authors": [
     "Dennis Frank <mail@dennisfrank.info>"
@@ -21,7 +21,6 @@
     "Javascript"
   ],
   "moduleType": [],
-  "homepage": "",
   "private": true,
   "ignore": [
     "**/.*",
