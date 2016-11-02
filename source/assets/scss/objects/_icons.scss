@@ -5,7 +5,7 @@
 // IconSizes in px
 $icon-sizes: (
   auto: 1em, // required
-  xs: 9px,
+  xs: $fs-xs,
   s: $fs-s,
   base: $fs-base, // required
   l: $fs-l,

@@ -13,15 +13,14 @@ $fw-medium: 500 !default;
 $fw-bold: 700 !default;
 
 // Font sizes
-$fs-xxxs: 8px !default;
 $fs-xxs: 9px !default;
-$fs-xs: 11px !default;
-$fs-s: 12px !default;
-$fs-base: 13px !default;
-$fs-l: 16px !default;
-$fs-xl: 18px !default;
-$fs-xxl: 20px !default;
-$fs-xxxl: 24px !default;
+$fs-xs: 10px !default;
+$fs-s: 13px !default;
+$fs-base: 16px !default;
+$fs-l: 20px !default;
+$fs-xl: 25px !default;
+$fs-xxl: 31px !default;
+$fs-xxxl: 39px !default;
 
 // Line height
 $lh-base: $fs-base * 1.3077 !default;
