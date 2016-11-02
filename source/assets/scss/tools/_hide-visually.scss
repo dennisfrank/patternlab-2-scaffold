@@ -17,6 +17,7 @@
   white-space: nowrap !important;
 
   @if $focusable == true {
+
     &:active,
     &:focus {
       clip: auto !important;

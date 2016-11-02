@@ -15,11 +15,9 @@ $icon-sizes: (
 $icon-default-size: auto !default;
 
 
-/**
- * Icon sizes
- */
 
-// Icon size mixin
+///* Icon sizes mixin
+//   ======================================================================== */
 @mixin icon-size($size: base, $important: null) {
 
   @if $important == "important" {
@@ -33,9 +31,8 @@ $icon-default-size: auto !default;
 
 
 
-/**
- * Icon size classes and data attributes
- */
+/* Icon size classes and data attributes
+   ========================================================================== */
 
 // Generate icon size classes
 @each $size, $value in $icon-sizes {
@@ -44,7 +41,6 @@ $icon-default-size: auto !default;
     @include icon-size($size, important);
   }
 }
-
 
 
 .o-icon {
@@ -56,7 +52,7 @@ $icon-default-size: auto !default;
   fill: currentColor;
 }
 
+
 .o-icon--middle {
   vertical-align: middle;
 }
-
