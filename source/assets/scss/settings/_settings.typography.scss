@@ -2,8 +2,8 @@
 //   #TYPOGRAPHY
 //   ======================================================================== */
 
-$base-font: "Arial" !default;
-$ff-base: "#{$base-font}", Helvetica, "Helvetica Neue", sans-serif !default;
+$base-font: Helvetica Neue !default;
+$ff-base: "#{$base-font}", Helvetica, sans-serif !default;
 
 // Font weights
 $fw-light: 100 !default;
